@@ -123,7 +123,7 @@ if (typeof jQuery !== "undefined" && typeof saveAs !== "undefined") {
       mhtmlBottom += "--NEXT.ITEM-BOUNDARY--";
 
       //TODO: load css from included stylesheet
-      var styles = "";
+      var styles = "@page WordSection1 {size: 595.3pt 841.9pt;margin: 1.5cm 2.0cm 1.5cm 2.0cm;mso-header-margin: 42.55pt;mso-footer-margin: 49.6pt;mso-paper-source: 0;}div.WordSection1 {page: WordSection1}";
 
       // Aggregate parts of the file together
       var fileContent = page.mhtml.top.replace("_html_", page.mhtml.head.replace("_styles_", styles) + page.mhtml.body.replace("_body_", markup.html())) + mhtmlBottom;
